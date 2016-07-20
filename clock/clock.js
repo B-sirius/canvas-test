@@ -22,7 +22,7 @@ window.onload = function() {
         function() {
             checkTime(context);
         },
-        50
+        20
     );
 }
 
@@ -82,7 +82,7 @@ var upDateBalls = function() {
         balls[i].vy += balls[i].g;
         if (balls[i].y >= WINDOW_HEIGHT - RADIUS) {
             balls[i].y = WINDOW_HEIGHT - RADIUS;
-            balls[i].vy = - balls[i].vy * 0.75;
+            balls[i].vy = - balls[i].vy * 0.85;
         }
         if (balls[i].x >= WINDOW_WIDTH + 10 || balls[i].x < 0 - 10) {
             balls.splice(i, 1);
